@@ -1,0 +1,28 @@
+{
+  "license": "MIT",
+  "name": "now",
+  "version": "0.0.1",
+  "main": "built/index.js",
+  "author": "Seia-Soto <seia@outlook.kr>",
+  "private": true,
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "build": "rm -rf built && swc src --out-dir built && tsc --pretty --skipLibCheck --declaration --emitDeclarationOnly",
+    "release": "standard-version",
+    "lint": "eslint --ext .js,.ts src"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.174",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.6.4"
+  }
+}
