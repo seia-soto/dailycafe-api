@@ -9,7 +9,7 @@ declare class Dailycafe {
             current: number;
             total: number;
         };
-        items: Promise<{
+        items: {
             name: string;
             image: string;
             pricing: {
@@ -37,7 +37,7 @@ declare class Dailycafe {
                 second: string;
             };
             isValid: boolean;
-        }>[];
+        }[];
         response: api.coupons.IDailyDiscountsResponse;
     }>;
     getDiscountsRecentSeen(): Promise<{
@@ -45,7 +45,7 @@ declare class Dailycafe {
             current: number;
             total: number;
         };
-        items: Promise<{
+        items: {
             name: string;
             image: string;
             pricing: {
@@ -73,7 +73,7 @@ declare class Dailycafe {
                 second: string;
             };
             isValid: boolean;
-        }>[];
+        }[];
         response: api.coupons.IDailyDiscountsResponse;
     }>;
     getDiscountsInterestedByFriends(): Promise<{
@@ -81,7 +81,7 @@ declare class Dailycafe {
             current: number;
             total: number;
         };
-        items: Promise<{
+        items: {
             name: string;
             image: string;
             pricing: {
@@ -109,7 +109,7 @@ declare class Dailycafe {
                 second: string;
             };
             isValid: boolean;
-        }>[];
+        }[];
         response: api.coupons.IDailyDiscountsResponse;
     }>;
     getDiscountsFeatured(): Promise<{
@@ -121,7 +121,7 @@ declare class Dailycafe {
             name: string;
             isLikedByUser: boolean;
         };
-        items: Promise<{
+        items: {
             name: string;
             image: string;
             pricing: {
@@ -149,7 +149,7 @@ declare class Dailycafe {
                 second: string;
             };
             isValid: boolean;
-        }>[];
+        }[];
         response: api.coupons.IFeaturedDiscountsByLikeCount;
     }>;
 }

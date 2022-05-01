@@ -89,7 +89,7 @@ export interface ICouponResponse {
   visibleYn: TYesOrNo | null
 }
 
-export const reformCouponResponse = async (coupon: ICouponResponse) => ({
+export const reformCouponResponse = (coupon: ICouponResponse) => ({
   name: coupon.goodsName || coupon.title,
   image: coupon.imageUri || coupon.goodsDiscountImageUri,
   pricing: {

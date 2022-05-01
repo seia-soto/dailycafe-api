@@ -85,7 +85,7 @@ export interface ICouponResponse {
     type: unknown | null;
     visibleYn: TYesOrNo | null;
 }
-export declare const reformCouponResponse: (coupon: ICouponResponse) => Promise<{
+export declare const reformCouponResponse: (coupon: ICouponResponse) => {
     name: string;
     image: string;
     pricing: {
@@ -113,7 +113,7 @@ export declare const reformCouponResponse: (coupon: ICouponResponse) => Promise<
         second: string;
     };
     isValid: boolean;
-}>;
+};
 export interface IDailyDiscountsResponse extends IBaseResponse {
     data: Array<ICouponResponse>;
 }
@@ -122,7 +122,7 @@ export declare const getDailyDiscounts: (client?: Got) => Promise<{
         current: number;
         total: number;
     };
-    items: Promise<{
+    items: {
         name: string;
         image: string;
         pricing: {
@@ -150,7 +150,7 @@ export declare const getDailyDiscounts: (client?: Got) => Promise<{
             second: string;
         };
         isValid: boolean;
-    }>[];
+    }[];
     response: IDailyDiscountsResponse;
 }>;
 export declare const getRecentSeen: (client?: Got) => Promise<{
@@ -158,7 +158,7 @@ export declare const getRecentSeen: (client?: Got) => Promise<{
         current: number;
         total: number;
     };
-    items: Promise<{
+    items: {
         name: string;
         image: string;
         pricing: {
@@ -186,7 +186,7 @@ export declare const getRecentSeen: (client?: Got) => Promise<{
             second: string;
         };
         isValid: boolean;
-    }>[];
+    }[];
     response: IDailyDiscountsResponse;
 }>;
 export declare const getInterestedByFriends: (client?: Got) => Promise<{
@@ -194,7 +194,7 @@ export declare const getInterestedByFriends: (client?: Got) => Promise<{
         current: number;
         total: number;
     };
-    items: Promise<{
+    items: {
         name: string;
         image: string;
         pricing: {
@@ -222,7 +222,7 @@ export declare const getInterestedByFriends: (client?: Got) => Promise<{
             second: string;
         };
         isValid: boolean;
-    }>[];
+    }[];
     response: IDailyDiscountsResponse;
 }>;
 export interface IFeaturedDiscountsByLikeCount extends IBaseResponse {
@@ -241,7 +241,7 @@ export declare const getFeaturedDiscounts: (client?: Got) => Promise<{
         name: string;
         isLikedByUser: boolean;
     };
-    items: Promise<{
+    items: {
         name: string;
         image: string;
         pricing: {
@@ -269,6 +269,6 @@ export declare const getFeaturedDiscounts: (client?: Got) => Promise<{
             second: string;
         };
         isValid: boolean;
-    }>[];
+    }[];
     response: IFeaturedDiscountsByLikeCount;
 }>;
