@@ -8,9 +8,14 @@ API 엔드포인트를 알기 위해 리버스 엔지니어링 기술 또한 사
 
 저는 일상카페가 건강한 커뮤니티 기반 서비스가 되길 바랍니다. 🥳
 
+> **조직이나 기업에서 이 패키지를 사용하여 프로젝트를 게시할 계획이신가요?**
+> 이 라이브러리의 사용은 명시적으로 금지되어 있습니다.
+> 라이선스(license) 부분에서 추가 정보를 확인하세요.
+
 ## Table of Contents
 
 - [API](#api)
+- [License](#license)
 
 # API
 
@@ -92,3 +97,10 @@ api.coupons.getDailyDiscounts(client) // promise를 반환
 #### `public getDiscountsInterestedByFriends`
 
 #### `public getDiscountsFeatured`
+
+# License
+
+커뮤니티를 위해 기본적으로 MIT 라이선스를 채택하고 있지만 (비영리를 포함한) 회사에서의 사용은 금지됩니다.
+여전히 이 라이브러리를 사용하고 싶으시다면, 일상카페 애플리케이션 소유자인 즐거운과 계약을 맺으십시오.
+
+> 저는 "즐거운"이나 그 어떤 회사와도 연관되어 있지 않으며 제 3자 개발작에 그 어떤 지원도 하지 않습니다.

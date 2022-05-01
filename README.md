@@ -8,9 +8,14 @@ I just got them from their mobile website.
 
 I hope Dailycafe to be a healthy community-driven service. 🥳
 
+> **Are you going to publish any projects using this package from organization or company?**
+> The use of this library is prohibited by license explicitally.
+> See additional info from license section.
+
 ## Table of Contents
 
 - [API](#api)
+- [License](#license)
 
 # API
 
@@ -92,3 +97,10 @@ It's encouraged to use stateless module if you want to give customized `got` ins
 #### `public getDiscountsInterestedByFriends`
 
 #### `public getDiscountsFeatured`
+
+# License
+
+I picked up the MIT license by default for community, but use of this package from companies (including non-profit) are prohibited.
+If you still want to use this library, please make a contract with dailycafe application owner, zlgoon.
+
+> I am not associated with "zlgoon" or any companies, and doesn't provide any support on the third-party development.
